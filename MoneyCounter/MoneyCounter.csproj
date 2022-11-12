@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>MoneyCounter.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.Core" Version="1.7.23" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.7.23" />
+    <PackageReference Include="Hangfire.Storage.SQLite" Version="0.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="Telegram.Bot" Version="15.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="credentials.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
